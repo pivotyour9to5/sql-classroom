@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SQL Playground — UNION</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/sql/sql.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+</head><body>
+<header><h1>UNION</h1><p class="tagline">Stack compatible result sets.</p></header>
+<main>
+<section class="controls"><div class="lesson-controls"><button id="resetDbBtn">Reset DB</button></div>
+<div class="run-controls"><button id="runBtn">▶ Run (Shift+Enter)</button><span id="status"></span></div></section>
+<section class="editor-section"><textarea id="sqlInput"></textarea></section>
+<section class="results-section"><div id="results"></div><pre id="errorBox" class="error" hidden></pre></section>
+</main>
+<footer><p><a href="index.html">← Back to Lesson Hub</a></p></footer>
+<script>window.DEFAULT_LESSON = "union";</script>
+<script src="app.js"></script>
+</body></html>
